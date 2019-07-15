@@ -9,7 +9,8 @@
     <body class="vue">
         <div id="app">
             <div class="win" v-if="agari" >
-                <a href="/vue"><img src="/static/pic/win.png"></a>
+                <p style="font-size:30px;color: white;font-weight: bold;">{{kawa.length}}回であがり！！</p>
+                <a href="/"><img src="/static/pic/win.png"></a>
             </div>
             <div class="sutehai" v-if="!agari" >
                 <template v-for="(hai, index) in kawa"><br v-if="(index % 9) == 0" ><img  v-bind:src="`/static/pic/${hai.pic}`"></template>
