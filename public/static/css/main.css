@@ -1,0 +1,16 @@
+.flask{
+    background-color: mediumaquamarine;
+}
+.vue{
+    background-color:steelblue; 
+}
+.sutehai{
+    text-align  : left;
+    margin-left : 100px;
+    margin-top  : 100px;
+}
+.tehai{
+    position      : absolute;
+    bottom        : 0;
+    margin-bottom : 30px;
+}
