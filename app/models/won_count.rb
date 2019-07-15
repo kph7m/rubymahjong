@@ -1,0 +1,2 @@
+class WonCount < ApplicationRecord
+end

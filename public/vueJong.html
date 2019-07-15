@@ -8,7 +8,8 @@
 
     <body class="vue">
         <div id="app">
-            <p style="font-size:30px;color: white;font-weight: bold;">あがりまでの平均ツモ数：{{wonCount.average}}回</p>
+            <p style="font-size:30px;color: white;font-weight: bold;">みんなのあがり数：{{wonCount.total}}回</p>
+            <p style="font-size:30px;color: white;font-weight: bold;">みんなのあがりまでの平均ツモ数：{{wonCount.average}}回</p>
             <div class="win" v-if="agari" >
                 <a href="/"><img src="/static/pic/win.png"></a>
             </div>

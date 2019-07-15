@@ -1,0 +1,27 @@
+<%= form_with(model: won_count, local: true) do |form| %>
+  <% if won_count.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(won_count.errors.count, "error") %> prohibited this won_count from being saved:</h2>
+
+      <ul>
+      <% won_count.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wonCount %>
+    <%= form.number_field :wonCount %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

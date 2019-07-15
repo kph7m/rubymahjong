@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @won_count.name %>
+</p>
+
+<p>
+  <strong>Woncount:</strong>
+  <%= @won_count.wonCount %>
+</p>
+
+<%= link_to 'Edit', edit_won_count_path(@won_count) %> |
+<%= link_to 'Back', won_counts_path %>
