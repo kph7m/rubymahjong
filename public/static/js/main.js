@@ -4,7 +4,8 @@ var app = new Vue({
         yamahai : [],
         kawa : [],
         tehai : [],
-        agari : false
+        agari : false,
+        wonCount : {}
     },
     created: function() {
         //山牌作成
@@ -20,6 +21,18 @@ var app = new Vue({
 
         //あがり判定
         this.agari = judge(this.tehai);
+
+        //API実行
+        axios.get("/getWonCount").then(response => {
+            console.log('body:', response.data);
+            this.wonCount = response.data;
+            console.log(this.wonCount);
+            console.log(this.wonCount.average);
+            });
+        // axios.get("/getWonCount").then(response => {
+        //     console.log('status:', response.status); // 200
+        //     console.log('body:', response.data);     // response body.
+        // });
     },
     methods: {
         //牌の交換

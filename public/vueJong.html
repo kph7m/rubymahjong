@@ -8,8 +8,8 @@
 
     <body class="vue">
         <div id="app">
+            <p style="font-size:30px;color: white;font-weight: bold;">あがりまでの平均ツモ数：{{wonCount.average}}回</p>
             <div class="win" v-if="agari" >
-                <p style="font-size:30px;color: white;font-weight: bold;">{{kawa.length}}回であがり！！</p>
                 <a href="/"><img src="/static/pic/win.png"></a>
             </div>
             <div class="sutehai" v-if="!agari" >
@@ -20,6 +20,7 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="/static/js/mahjong.js"></script>
         <script src="/static/js/main.js"></script>
     </body>

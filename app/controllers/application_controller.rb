@@ -4,4 +4,5 @@ class ApplicationController < ActionController::Base
   def main
     render file: 'public/vueJong.html', layout: false, content_type: 'text/html'
   end
+
 end
